@@ -1,6 +1,6 @@
-Ruby on Rails Tutorial sample application
+This is a sample application for a twitter like app, I will be building it from a non scaffolding approach from scratch.
 
-This is the sample application for a twitter like app
+You can check the deployed Heroku version on https://afternoon-oasis-45843.herokuapp.com/
 
 ## Getting started
 
