@@ -57,11 +57,3 @@ class PictureUploader < CarrierWave::Uploader::Base
   # end
 
 end
-
-# Access Key ID:
-# AKIAIFPMVBKYLFOQQYCQ
-# Secret Access Key:
-# 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
-
-
-# heroku config:set S3_ACCESS_KEY=AKIAIFPMVBKYLFOQQYCQ
