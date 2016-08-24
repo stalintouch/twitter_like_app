@@ -1,4 +1,20 @@
-This is a sample application for a twitter like app, I will be building it from a non scaffolding approach from scratch.
+This is a sample application for a twitter clone app, I will be building it from a non scaffolding. This app was build Test Driven Development (TDD) approach with unit test. 
+
+Ruby on Rails, Boostrap, Sass SQlite for the development portion of the app and postgreSQL for the deployed app
+
+Some of the implementations on the app were :
+
+Sign up                     Email verification      Email account activations
+
+Secure Socket Layer (SSL)   Remember users through sessions and cookies 
+
+Updating, Showing, deleting users                   Password reset
+
+Users ability to micropost  Micropost feed          micropost with images
+
+Following and being follow by users ( just like in Twitter)
+
+Status feed microposts
 
 You can check the deployed Heroku version on https://afternoon-oasis-45843.herokuapp.com/
 
