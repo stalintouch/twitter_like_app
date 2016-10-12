@@ -21,6 +21,8 @@ gem 'will_paginate',   '3.1.0'
 
 gem 'bootstrap-will_paginate', '0.0.10'
 
+gem 'acts_as_votable', '~> 0.10.0'
+
 gem 'puma', '3.4.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.5'

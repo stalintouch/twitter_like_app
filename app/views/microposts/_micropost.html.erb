@@ -10,5 +10,18 @@
     <% if current_user?(micropost.user) %>
       <%= link_to "delete", micropost, method: :delete, data: { confirm: "Are you sure?" } %>
     <% end %>
+    <%= link_to like_micropost_path(micropost), method: :put, class: "btn btn-default" do %>
+      <span class="glyphicon glyphicon-heart">
+        <%= micropost.get_upvotes.size %>
+      </span>
+    <% end %>
+    <%= link_to dislike_micropost_path(micropost), method: :put, class: "btn btn-default" do %>
+      <span class="glyphicon glyphicon-thumbs-down">
+        <%= micropost.get_downvotes.size %>
+      </span>
+    <% end %>
+
   </span>
 </li>
+
+
