@@ -5,6 +5,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   def setup
     @user = users(:michael)
     @other_user = users(:archer)
+    @micropost = microposts(:orange)
   end
 
   test "should get new" do
@@ -16,6 +17,15 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     get edit_user_path(@user)
     assert_not flash.empty?
     assert_redirected_to login_url
+  end
+
+  test 'User should be redirected to login page if not logged in to vote' do
+    assert_no_difference '@micropost.get_upvotes.size' do
+      delete user_path(@user)
+      @micropost.upvote_by(@user_id)
+    end
+      assert_equal 0, @micropost.get_upvotes.size
+      assert_redirected_to login_url
   end
 
   test "should redirect update when not logged in" do   
